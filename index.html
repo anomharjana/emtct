@@ -13,6 +13,7 @@
           colors: {
             primary: '#1e3a8a',
             secondary: '#3b82f6',
+            accent: '#f59e0b',
           }
         }
       }
@@ -21,93 +22,119 @@
 </head>
 
 <body
-  class="bg-gradient-to-br from-white via-blue-50 to-indigo-100 font-sans text-gray-800 min-h-screen flex flex-col items-center justify-start py-10 px-4">
-
-  <!-- Logo -->
-  <img src="https://res.cloudinary.com/djexglfns/image/upload/v1748477863/cropped-cropped-1.1_Logo_PIKAT-removebg-preview_pbkeup.png"
-    alt="Logo" class="w-24 h-24 mb-4 rounded-full shadow-lg border-4 border-white" />
+  class="bg-gradient-to-br from-white via-blue-50 to-indigo-100 font-sans text-gray-800 min-h-screen flex flex-col justify-between">
 
   <!-- Header -->
-  <h1 class="text-3xl sm:text-4xl font-extrabold text-primary mb-10 drop-shadow-md tracking-wide text-center">
-    Survei Baseline EMTCT
-  </h1>
+  <header class="flex flex-col items-center py-10 px-4">
+    <img src="https://res.cloudinary.com/djexglfns/image/upload/v1748477863/cropped-cropped-1.1_Logo_PIKAT-removebg-preview_pbkeup.png"
+      alt="Logo" class="w-24 h-24 mb-4 rounded-full shadow-lg border-4 border-white" />
+    <h1 class="text-4xl font-extrabold text-primary mb-2 drop-shadow-md tracking-wide text-center">
+      Survei Baseline EMTCT
+    </h1>
+    <p class="text-lg text-gray-600">Silakan pilih survei sesuai kategori fasilitas</p>
+  </header>
 
-  <!-- Card Buttons -->
-  <div class="w-full max-w-md flex flex-col space-y-6">
+  <!-- Main Content -->
+  <main class="w-full max-w-3xl mx-auto px-4 pb-16 space-y-10">
 
-    <!-- Card 1 -->
-    <a href="https://baseline-emtct.clappia.com/app/WPI233223" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-blue-100 to-blue-300 hover:from-blue-300 hover:to-blue-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-blue-800">
-      <div class="flex items-center justify-between">
-        <span>WP 1 - Level Dinas Kesehatan</span>
-        <svg class="w-6 h-6 text-blue-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
+    <!-- WP 1 Section -->
+    <section class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-blue-200">
+      <p class="text-sm font-semibold text-blue-700 animate-pulse mb-2">
+        Data Indikator Program Triple Eliminasi HIV, Sifilis, Hepatitis B
+      </p>
+      <h2 class="text-2xl font-bold text-primary mb-4 border-b pb-2">WP 1 - DATA INDIKATOR</h2>
+      <div class="grid gap-4">
+
+        <!-- Dinas Kesehatan -->
+        <a href="https://baseline-emtct.clappia.com/app/WPI233223" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-blue-100 to-blue-300 hover:from-blue-300 hover:to-blue-500 transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-blue-800">
+          <div class="flex items-center justify-between">
+            <span>WP 1 - Level Dinas Kesehatan</span>
+            <svg class="w-6 h-6 text-blue-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Puskesmas PDP -->
+        <a href="https://baseline-emtct.clappia.com/app/WPB777937" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-primary/10 to-primary/30 hover:from-primary/30 hover:to-primary transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-primary">
+          <div class="flex items-center justify-between">
+            <span>WP 1 - Level Puskesmas PDP</span>
+            <svg class="w-6 h-6 text-primary group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Puskesmas Non-PDP -->
+        <a href="https://baseline-emtct.clappia.com/app/WPB838936" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-primary/10 to-primary/30 hover:from-primary/30 hover:to-primary transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-primary">
+          <div class="flex items-center justify-between">
+            <span>WP 1 - Level Puskesmas Non-PDP</span>
+            <svg class="w-6 h-6 text-primary group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Faskes Jejaring ANC -->
+        <a href="https://baseline-emtct.clappia.com/app/WPC601678" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-purple-100 to-purple-300 hover:from-purple-300 hover:to-purple-500 transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-purple-800">
+          <div class="flex items-center justify-between">
+            <span>WP 1 - Level Faskes Jejaring ANC</span>
+            <svg class="w-6 h-6 text-purple-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Komunitas Pendamping -->
+        <a href="https://baseline-emtct.clappia.com/app/WPD408114" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-pink-100 to-pink-300 hover:from-pink-300 hover:to-pink-500 transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-pink-800">
+          <div class="flex items-center justify-between">
+            <span>WP 1 - Level Komunitas Pendamping</span>
+            <svg class="w-6 h-6 text-pink-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
       </div>
-    </a>
+    </section>
 
-    <!-- Card 2 -->
-    <a href="https://baseline-emtct.clappia.com/app/WPB777937" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-green-100 to-green-300 hover:from-green-300 hover:to-green-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-green-800">
-      <div class="flex items-center justify-between">
-        <span>WP 1 - Level Puskesmas PDP</span>
-        <svg class="w-6 h-6 text-green-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
+    <!-- WP 2 Section -->
+    <section class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-red-200">
+      <p class="text-sm font-semibold text-red-600 animate-pulse mb-2">
+        Data Pengetahuan, Sikap, dan Proses Pelaksanaan Program
+      </p>
+      <h2 class="text-2xl font-bold text-red-600 mb-4 border-b pb-2">WP 2 - SURVEI</h2>
+      <div class="grid gap-4">
+        <a href="https://baseline-emtct.clappia.com/app/FQW269525" target="_blank"
+          class="group block rounded-xl bg-gradient-to-r from-red-100 to-red-300 hover:from-red-300 hover:to-red-500 transition transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-red-800">
+          <div class="flex items-center justify-between">
+            <span>WP 2 - Fasilitas Kesehatan</span>
+            <svg class="w-6 h-6 text-red-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
+              fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
       </div>
-    </a>
+    </section>
 
-    <!-- Card 2 -->
-    <a href="https://baseline-emtct.clappia.com/app/WPB838936" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-green-100 to-green-300 hover:from-green-300 hover:to-green-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-green-800">
-      <div class="flex items-center justify-between">
-        <span>WP 1 - Level Puskesmas Non-PDP</span>
-        <svg class="w-6 h-6 text-green-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </a>
+  </main>
 
-    <!-- Card 3 -->
-    <a href="https://baseline-emtct.clappia.com/app/WPC601678" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-purple-100 to-purple-300 hover:from-purple-300 hover:to-purple-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-purple-800">
-      <div class="flex items-center justify-between">
-        <span>WP 1 - Level Faskes Jejaring ANC</span>
-        <svg class="w-6 h-6 text-purple-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </a>
+  <!-- Footer -->
+  <footer class="text-center bg-primary text-white py-4 text-sm">
+    &copy; 2025 EMTCT Project — All rights reserved
+  </footer>
 
-    <!-- Card 4 -->
-    <a href="https://baseline-emtct.clappia.com/app/WPD408114" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-pink-100 to-pink-300 hover:from-pink-300 hover:to-pink-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-pink-800">
-      <div class="flex items-center justify-between">
-        <span>WP 1 - Level Komunitas Pendamping</span>
-        <svg class="w-6 h-6 text-pink-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </a>
-
-    <!-- Card 5 -->
-    <a href="https://baseline-emtct.clappia.com/app/FQW269525" target="_blank"
-      class="group block rounded-xl bg-gradient-to-r from-red-100 to-red-300 hover:from-red-300 hover:to-red-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg p-6 text-xl font-semibold text-red-800">
-      <div class="flex items-center justify-between">
-        <span>WP 2 - Survei Fasilitas Kesehatan</span>
-        <svg class="w-6 h-6 text-red-700 group-hover:translate-x-1 group-hover:text-white transition-transform"
-          fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
-    </a>
-
-  </div>
 </body>
 
 </html>
